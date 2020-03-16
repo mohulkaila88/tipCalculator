@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Tip Calculator</title>
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">    
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <h1>Tip Calculator</h1>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-8">
+                        <label for="amount">Amount:</label>
+                        <input id="amount" type="text">
+                    </div>
+                </div>
+                <div id="tipInput" class="row">
+                    <div class="col-1">
+                        <label for="ten">10%</label>
+                        <input id="ten" name="tip" value="10" type="radio">
+                    </div>
+                    <div class="col-1">
+                        <label for="fifteen">15%</label>
+                        <input id="fifteen" name="tip" value="15" type="radio">
+                    </div>
+                    <div class="col-1">
+                        <label for="eighteen">18%</label>
+                        <input id="amount" name="tip" value="18" type="radio">  
+                    </div>
+                    <div class="col-1">
+                        <label for="twenty">20%</label>
+                        <input id="twenty" name="tip" value="20" type="radio">
+                    </div>
+                    <div class="col-1">
+                        <label for="other">Other</label>
+                        <input id="other" name="tip" value="other" type="radio" onchange="createNewInput()">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <button id="btnCalculate" type="submit">Calculate</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
